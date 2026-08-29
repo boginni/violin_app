@@ -1,0 +1,18 @@
+name: violin_design_system
+description: "The design system package for the Violin app"
+version: 0.0.1
+publish_to: 'none'
+
+environment:
+  sdk: ^3.11.0
+
+resolution: workspace
+
+dependencies:
+  flutter:
+    sdk: flutter
+  violin_assets:
+    path: ../violin_assets
+
+dev_dependencies:
+  network_image_mock: ^2.1.1

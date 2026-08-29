@@ -1,10 +1,13 @@
 import 'package:custom_go_router/custom_go_router.dart';
 import 'package:flutter/material.dart';
+import 'package:violin_app/src/ui/tuner/controllers/tuner_store.dart';
+import 'package:violin_app/src/ui/tuner/tuner_routes.dart';
 
 import '../app/app_dependencies.dart';
 import '../home/controllers/home_controller.dart';
 import '../home/controllers/home_store.dart';
 import '../home/controllers/shorten_history_store.dart';
+import '../tuner/controllers/tuner_controller.dart';
 import 'controller/shell_controller.dart';
 import 'controller/shell_store.dart';
 import 'shell_page.dart';
@@ -31,11 +34,16 @@ class ShellRoute extends AppRoute {
 
   late final store = ShellStore();
   late final homeStore = HomeStore();
+  late final tunerStore = TunerStore();
   late final shortenHistoryStore = ShortenHistoryStore();
 
   late final shellController = ShellController(
     appController: AppDependencies.get(),
     store: store,
+    tunerController: TunerController(
+      AppDependencies.get(),
+      store: tunerStore,
+    ),
     homeController: HomeController(
       AppDependencies.get(),
       AppDependencies.get(),

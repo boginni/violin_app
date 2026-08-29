@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:nubank_test/src/domain/dto/entities/shortened_url_entity.dart';
-import 'package:nubank_test/src/ui/home/components/shortened_url_list_tile.dart';
+import 'package:violin_app/src/domain/dto/entities/shortened_url_entity.dart';
+import 'package:violin_app/src/ui/home/components/shortened_url_list_tile.dart';
 
 import '../../../../material_app_testing.dart';
 

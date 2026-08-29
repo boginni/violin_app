@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:nubank_test/src/domain/dto/entities/shortened_url_entity.dart';
-import 'package:nubank_test/src/domain/dto/params/shorten_url_params_entity.dart';
-import 'package:nubank_test/src/external/datasources/shorten_url_datasource.dart';
-import 'package:nubank_test/src/external/provider/shorten_url_history_provider.dart';
+import 'package:violin_app/src/domain/dto/entities/shortened_url_entity.dart';
+import 'package:violin_app/src/domain/dto/params/shorten_url_params_entity.dart';
+import 'package:violin_app/src/external/datasources/shorten_url_datasource.dart';
+import 'package:violin_app/src/external/provider/shorten_url_history_provider.dart';
 
 class MockDio extends Mock implements Dio {}
 

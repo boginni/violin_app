@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nu_l10n/nu_l10n.dart';
-import 'package:nubank_test/src/ui/app/material_theme.dart';
+import 'package:violin_app/src/ui/app/material_theme.dart';
+import 'package:violin_l10n/violin_l10n.dart';
 
 class MaterialAppTesting extends StatefulWidget {
   const MaterialAppTesting({
@@ -30,8 +30,8 @@ class _MaterialAppTestingState extends State<MaterialAppTesting> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      localizationsDelegates: NuL10n.localizationsDelegates,
-      supportedLocales: NuL10n.supportedLocales,
+      localizationsDelegates: ViolinL10n.localizationsDelegates,
+      supportedLocales: ViolinL10n.supportedLocales,
       theme: lightTheme,
       darkTheme: darkTheme,
       home: Scaffold(

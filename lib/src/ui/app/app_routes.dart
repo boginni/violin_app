@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../shell/shell_routes.dart';
 import '../splash/splash_route.dart';
+import '../tuner/tuner_routes.dart';
 
 class AppRoutes {
   AppRoutes();
@@ -22,6 +23,9 @@ class AppRoutes {
         ),
         CustomGoRoute(
           config: ShellRouteConfig(),
+        ),
+        CustomGoRoute(
+          config: TunerRouteConfig(),
         ),
       ],
     );

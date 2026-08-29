@@ -246,7 +246,7 @@ class ShellRoute extends AppRoute {
 - `lib/src/ui/app/extensions/context_extensions.dart` — use `context.theme`,
   `context.textTheme`, `context.colorScheme`, `context.width/height`,
   `context.isDarkMode`, etc. instead of `Theme.of(context)` directly.
-- `context.l10n` (from `nu_l10n`) for all user-facing strings — never hardcode
+- `context.l10n` (from `violin_l10n`) for all user-facing strings — never hardcode
   strings in widgets.
 - `lib/src/domain/environment.dart` — compile-time config via
   `String.fromEnvironment`/`bool.fromEnvironment` (`--dart-define`), not a

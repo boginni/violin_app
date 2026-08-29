@@ -1,7 +1,7 @@
 import 'package:error_handler_with_result/error_handler_with_result.dart';
 import 'package:flutter_test/flutter_test.dart' hide TestFailure;
 import 'package:mocktail/mocktail.dart';
-import 'package:nubank_test/src/domain/repositories/device_runtime_repository.dart';
+import 'package:violin_app/src/domain/repositories/device_runtime_repository.dart';
 
 class MockDeviceRuntimeRepository extends Mock
     implements DeviceRuntimeRepository {}

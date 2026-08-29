@@ -1,8 +1,8 @@
 import 'package:error_handler_with_result/error_handler_with_result.dart';
 import 'package:flutter_test/flutter_test.dart' hide TestFailure;
 import 'package:mocktail/mocktail.dart';
-import 'package:nubank_test/src/external/datasources/device_runtime_datasource.dart';
-import 'package:nubank_test/src/external/repositories/device_runtime_repository_impl.dart';
+import 'package:violin_app/src/external/datasources/device_runtime_datasource.dart';
+import 'package:violin_app/src/external/repositories/device_runtime_repository_impl.dart';
 
 class MockDeviceRuntimeDatasource extends Mock
     implements DeviceRuntimeDatasource {}

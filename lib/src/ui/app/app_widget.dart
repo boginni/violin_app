@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nu_design_system/nu_design_system.dart';
-import 'package:nu_l10n/nu_l10n.dart';
+import 'package:violin_design_system/violin_design_system.dart';
+import 'package:violin_l10n/violin_l10n.dart';
 
 import 'app_dependencies.dart';
 import 'controllers/app_controller.dart';
@@ -48,13 +48,13 @@ class _AppWidgetState extends State<AppWidget> {
       valueListenable: widget.controller.store,
       builder: (context, value, child) {
         return MaterialApp.router(
-          title: 'Nu Test',
+          title: 'Violin App',
           locale: value.locale,
           theme: lightTheme,
           darkTheme: darkTheme,
           themeMode: value.themeMode,
-          supportedLocales: NuL10n.supportedLocales,
-          localizationsDelegates: NuL10n.localizationsDelegates,
+          supportedLocales: ViolinL10n.supportedLocales,
+          localizationsDelegates: ViolinL10n.localizationsDelegates,
           routerConfig: widget.controller.appRoutes.routes,
           builder: (context, child) => ThemeRegistry(
             lightTheme: lightTheme,

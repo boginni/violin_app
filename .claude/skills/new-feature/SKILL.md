@@ -107,7 +107,7 @@ the template.
     `..._loading_component.dart`, `..._success_component.dart`), taking only
     primitives/callbacks, no controller/store access.
 15. Use `context.l10n.<key>` for every user-facing string — add the key to
-    **both** `packages/nu_l10n/lib/src/l10n/intl_en.arb` and `intl_pt.arb`
+    **both** `packages/violin_l10n/lib/src/l10n/intl_en.arb` and `intl_pt.arb`
     first.
 
 ### 5. Routing (only if this feature is a new screen)

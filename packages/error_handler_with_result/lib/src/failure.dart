@@ -29,6 +29,8 @@ abstract class TimeoutFailure implements Failure {}
 
 abstract class ClientServerFailure implements Failure {}
 
+abstract class PermissionFailure implements Failure {}
+
 class SerializationFailure extends Failure {
   const SerializationFailure(this.error, StackTrace stackTrace)
     : super(stackTrace);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nu_l10n/nu_l10n.dart';
+import 'package:violin_l10n/violin_l10n.dart';
 
 import '../../../../domain/dto/entities/shortened_url_entity.dart';
 import '../../../app/extensions/context_extensions.dart';

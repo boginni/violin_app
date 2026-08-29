@@ -1,10 +1,10 @@
 import 'package:error_handler_with_result/error_handler_with_result.dart';
 import 'package:flutter_test/flutter_test.dart' hide TestFailure;
 import 'package:mocktail/mocktail.dart';
-import 'package:nubank_test/src/domain/dto/entities/shortened_url_entity.dart';
-import 'package:nubank_test/src/domain/dto/params/shorten_url_params_entity.dart';
-import 'package:nubank_test/src/external/datasources/shorten_url_datasource.dart';
-import 'package:nubank_test/src/external/repositories/shorten_url_repository_impl.dart';
+import 'package:violin_app/src/domain/dto/entities/shortened_url_entity.dart';
+import 'package:violin_app/src/domain/dto/params/shorten_url_params_entity.dart';
+import 'package:violin_app/src/external/datasources/shorten_url_datasource.dart';
+import 'package:violin_app/src/external/repositories/shorten_url_repository_impl.dart';
 
 class MockShortenUrlDatasource extends Mock implements ShortenUrlDatasource {}
 

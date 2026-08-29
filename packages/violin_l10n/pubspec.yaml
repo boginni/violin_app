@@ -1,0 +1,23 @@
+name: violin_l10n
+description: "Localization package for the Violin app"
+version: 0.0.1
+publish_to: 'none'
+
+environment:
+  sdk: ^3.6.0
+
+resolution: workspace
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_localization: ^0.4.0
+
+flutter:
+  generate: true
+  uses-material-design: true

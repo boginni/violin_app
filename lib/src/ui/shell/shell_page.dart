@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:violin_app/src/ui/tuner/pages/tuner_page.dart';
 
 import '../home/pages/home_page.dart';
 import 'controller/shell_controller.dart';
@@ -39,8 +40,8 @@ class _ShellPageState extends State<ShellPage> {
 
   @override
   Widget build(BuildContext context) {
-    return HomePage(
-      controller: controller.homeController,
+    return TunerPage(
+      controller: controller.tunerController,
     );
   }
 }

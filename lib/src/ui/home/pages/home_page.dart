@@ -1,8 +1,10 @@
+import 'package:custom_go_router/custom_go_router.dart';
 import 'package:error_handler_with_result/error_handler_with_result.dart';
 import 'package:flutter/material.dart';
-import 'package:nu_l10n/nu_l10n.dart';
+import 'package:violin_l10n/violin_l10n.dart';
 
 import '../../../domain/dto/entities/shortened_url_entity.dart';
+import '../../tuner/tuner_routes.dart';
 import '../components/home_header_component.dart';
 import '../components/shorten_history/shorten_history_empty_component.dart';
 import '../components/shorten_history/shorten_history_failure_component.dart';
@@ -95,7 +97,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(context.l10n.nu_test),
+        title: Text(context.l10n.app_title),
+        actions: [
+          IconButton(
+            tooltip: context.l10n.violin_tuner,
+            icon: const Icon(Icons.mic),
+            onPressed: () => context.pushRoute(TunerRoute()),
+          ),
+        ],
       ),
       body: ListenableBuilder(
         listenable: Listenable.merge([

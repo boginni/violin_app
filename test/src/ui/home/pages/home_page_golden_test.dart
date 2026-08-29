@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:nubank_test/src/domain/dto/entities/shortened_url_entity.dart';
-import 'package:nubank_test/src/domain/repositories/device_runtime_repository.dart';
-import 'package:nubank_test/src/domain/repositories/shorten_url_repository.dart';
-import 'package:nubank_test/src/ui/home/controllers/home_controller.dart';
-import 'package:nubank_test/src/ui/home/controllers/home_store.dart';
-import 'package:nubank_test/src/ui/home/controllers/shorten_history_store.dart';
-import 'package:nubank_test/src/ui/home/pages/home_page.dart';
+import 'package:violin_app/src/domain/dto/entities/shortened_url_entity.dart';
+import 'package:violin_app/src/domain/repositories/device_runtime_repository.dart';
+import 'package:violin_app/src/domain/repositories/shorten_url_repository.dart';
+import 'package:violin_app/src/ui/home/controllers/home_controller.dart';
+import 'package:violin_app/src/ui/home/controllers/home_store.dart';
+import 'package:violin_app/src/ui/home/controllers/shorten_history_store.dart';
+import 'package:violin_app/src/ui/home/pages/home_page.dart';
 
 import '../../../../material_app_testing.dart';
 

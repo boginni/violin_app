@@ -7,11 +7,11 @@ description: Scaffold a new local workspace package under packages/ in this Flut
 
 This repo uses a `pubspec.yaml` `workspace: [packages/*]` layout — see
 `docs/PACKAGES.md` at the repo root for what each existing package
-(`custom_go_router`, `error_handler_with_result`, `nu_assets`,
-`nu_design_system`, `nu_l10n`) is responsible for, so you don't duplicate one
+(`custom_go_router`, `error_handler_with_result`, `violin_assets`,
+`violin_design_system`, `violin_l10n`) is responsible for, so you don't duplicate one
 of them by accident.
 
-Ask the user for the package name (snake_case, e.g. `nu_analytics`) and a
+Ask the user for the package name (snake_case, e.g. `violin_analytics`) and a
 one-sentence description of what it's for before scaffolding.
 
 ## Steps
@@ -43,8 +43,8 @@ one-sentence description of what it's for before scaffolding.
      flutter:
        sdk: flutter
      # add path deps on other local packages the same way the root does, e.g.:
-     # nu_assets:
-     #   path: ../nu_assets
+     # violin_assets:
+     #   path: ../violin_assets
 
    dev_dependencies:
      flutter_test:
@@ -85,7 +85,7 @@ one-sentence description of what it's for before scaffolding.
 
 8. If the package needs golden tests (visual widgets), add
    `golden_toolkit` and, if it renders network images, `network_image_mock` to
-   `dev_dependencies`, matching `packages/nu_design_system/pubspec.yaml`.
+   `dev_dependencies`, matching `packages/violin_design_system/pubspec.yaml`.
 
 ## After scaffolding
 

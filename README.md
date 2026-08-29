@@ -1,4 +1,4 @@
-# nubank_test
+# violin_app
 
 A Flutter template: domain-first Clean Architecture with a ChangeNotifier-based
 "BLoC-lite" state pattern, a local `packages/*` workspace, and a working

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
-import 'package:nubank_test/src/ui/home/components/home_header_component.dart';
+import 'package:violin_app/src/ui/home/components/home_header_component.dart';
 
 import '../../../../material_app_testing.dart';
 

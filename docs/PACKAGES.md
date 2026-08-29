@@ -22,33 +22,33 @@ navigation extensions (`goToRoute`, `pushRoute`, `maybePop`, ...). See
 [docs/ARCHITECTURE.md](ARCHITECTURE.md#routing-custom_go_router--go_router).
 Depends on `go_router: ^14.8.1`.
 
-## `nu_design_system`
+## `violin_design_system`
 
 Design-system atoms: `CustomFontBuilder`, `InverseBrightnessBuilder` (+
 `ThemeRegistry`, an `InheritedWidget` exposing the light/dark theme pair down
 the tree — used by `AppWidget`), `RainbowThemeBuilder`, `PlaceHolderImage`,
 `FaviconImage` (network favicon fetch through a proxy, with graceful fallback
-to `PlaceHolderImage`). Depends on `nu_assets` (path dep); dev-depends on
+to `PlaceHolderImage`). Depends on `violin_assets` (path dep); dev-depends on
 `network_image_mock` for its own golden tests
 (`test/src/atoms/*_golden_test.dart`). This is where new shared, reusable
 visual atoms belong — feature-specific widgets stay in
 `lib/src/ui/<feature>/components/`.
 
-## `nu_assets`
+## `violin_assets`
 
-Generated asset accessor. `lib/src/nu_assets_resources.dart` is marked
+Generated asset accessor. `lib/src/violin_assets_resources.dart` is marked
 "GENERATED CODE - DO NOT MODIFY BY HAND" and is produced by
 `scripts/generate_sources.dart` from `assets/resources/`. To add a new asset:
 drop the file into `assets/resources/`, re-run the generator script, then
-reference it as `NuAssetsResources.<generatedName>` — never hand-edit the
+reference it as `ViolinAssetsResources.<generatedName>` — never hand-edit the
 generated file.
 
-## `nu_l10n`
+## `violin_l10n`
 
 Localization facade over Flutter's `intl`/ARB codegen. `l10n.yaml` points at
 `lib/src/l10n`, template `intl_en.arb`; `intl_pt.arb` provides pt-BR. Generates
 `lib/src/gen/app_localizations.g.dart`, which app code never imports directly
-— instead use the `context.l10n` extension and the `NuL10n` facade
+— instead use the `context.l10n` extension and the `ViolinL10n` facade
 (`localizationsDelegates`, `supportedLocales`) that this package exports. Add a
 new string to **both** ARB files before using it.
 

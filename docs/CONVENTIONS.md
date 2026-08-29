@@ -56,8 +56,8 @@ widget test file that has golden coverage.
 ## Import style
 
 - **Relative imports within `lib/`** — enforced by `prefer_relative_imports` in
-  `analysis_options.yaml`. Only use `package:nubank_test/...` from `test/`.
-- Local workspace packages (`nu_design_system`, `nu_l10n`, `nu_assets`,
+  `analysis_options.yaml`. Only use `package:violin_app/...` from `test/`.
+- Local workspace packages (`violin_design_system`, `violin_l10n`, `violin_assets`,
   `custom_go_router`, `error_handler_with_result`) are imported as
   `package:<name>/<name>.dart` (the package's public barrel file) from both
   `lib/` and `test/`.
@@ -113,6 +113,6 @@ a template for what a real fork might need, not as active configuration.
 
 ## Localization
 
-All strings go through ARB files in `packages/nu_l10n` (`intl_en.arb`,
+All strings go through ARB files in `packages/violin_l10n` (`intl_en.arb`,
 `intl_pt.arb`) and are consumed via `context.l10n.<key>` — never hardcode
 user-facing text in a widget.
